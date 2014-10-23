@@ -5,6 +5,7 @@ public class Case {
 	private boolean occupe;
 	private  Bateau bat;
 	
+	
 	public Case(){
 		occupe=false;
 		
