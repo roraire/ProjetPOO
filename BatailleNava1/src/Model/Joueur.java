@@ -5,30 +5,18 @@ import java.util.List;
 
 public class Joueur {
 
-	private String nom;
-	private Grille grille;
-	private List<Bateau> bateaux=new ArrayList<Bateau>();
+	
+	protected Grille grille;
+	protected List<Bateau> bateaux=new ArrayList<Bateau>();
 	
 	
 
-	public Joueur(String nom) {
+	public Joueur() {
 		super();
-		int i=1;
-		this.nom = nom;
-		this.grille = new Grille();
-		while(i<6){
-			bateaux.add(new Bateau(i));
-			i++;
-		}
+		
 		
 	}
 	
-	public String getNom() {
-		return nom;
-	}
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
 	public Grille getGrille() {
 		return grille;
 	}
@@ -51,7 +39,7 @@ public class Joueur {
 	{
 		boolean v=false;
 		try{
-		if(position=="h"){
+		if(position=="h" && j+b.getNbrCase()<10){
 			for(int k=0; k<b.getNbrCase();k++ )
 			{
 				if(!this.getGrille().getCaseGrille(i, j+k).isOccupe())
@@ -64,7 +52,7 @@ public class Joueur {
 				}
 			}
 		}
-		if(position=="v"){
+		if(position=="v"  && i+b.getNbrCase()<10){
 			for(int k=0; k<b.getNbrCase();k++ )
 			{
 				if(!this.getGrille().getCaseGrille(i+k, j).isOccupe())

@@ -32,7 +32,7 @@ public class Grille {
 					
 					
 					if(getCaseGrille(i, j).isOccupe())
-					System.out.print("0" + " ");
+					System.out.print("X" + " ");
 					else System.out.print(" " + " ");
 				}
 				System.out.println("|");

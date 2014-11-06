@@ -1,0 +1,62 @@
+package Vue;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class JoueurVue extends JFrame {
+	
+	public JoueurVue(){
+		super();
+		setTitle("Bataille Naval");
+		setSize(400, 450);
+		setResizable(false);
+		setVisible(true);
+		setLocation(300, 300);
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public void paint(Graphics g){
+		
+		repaint();
+	}
+	
+	public void paintComponent(Graphics g){
+		
+		g.setColor(Color.black);
+  		g.drawLine(5, 25, 205, 25);
+  		g.setFont(new Font("SansSerif", Font.PLAIN, 10));
+  		g.drawString("Bonjour", 110, 10);
+	}
+	
+	/*public void paintComponent(Graphics g){
+		
+		super.paintComponent(g);
+
+	      		double balance = getAccount().getBalance();
+
+	      		int barLength = (int)((balance/10000.0)*200);
+	      
+			if(balance >= 0.0){
+	         			g.setColor(Color.green);
+	         			g.fillRect(105, 15, barLength, 20);
+	      		}else{
+	         			g.setColor(Color.red);
+	         			g.fillRect(105 + barLength, 15, -barLength, 20);
+	      		}
+	      
+	      		g.setColor(Color.black);
+	      		g.drawLine(5, 25, 205, 25);
+	      		g.drawLine(105, 5, 105, 45);      
+				g.setFont(new Font("SansSerif", Font.PLAIN, 10));
+	      		g.drawString("-5,000€", 5, 10); 
+	      		g.drawString("0€", 110, 10);
+	      		g.drawString("+5,000€", 166, 10);
+
+		}*/
+
+}

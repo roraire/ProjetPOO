@@ -1,0 +1,21 @@
+package Vue;
+
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
+public class JeuPanel extends JPanel {
+	public JeuPanel(){
+	}
+	
+	public void updateDisplay(){
+		repaint();
+   	}
+	
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		for(int i=0;i<1000; i=+100){
+		g.drawLine(100+i, 250, 205, 250);
+	}
+	}
+}
