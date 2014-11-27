@@ -19,8 +19,8 @@ public class Main {
 		j1.poserBateau(j1.getBateau(4), 7, 7, "v");
 		j1.getGrille().VueGrille();
 	    JoueurVue jv  = new JoueurVue();
-	     jv.setVisible(true);
-	JoueurMachine m1=new JoueurMachine();
+	    jv.setVisible(true);
+	//JoueurMachine m1=new JoueurMachine();
 		
 	/*JFrame jf= new JFrame();
 	jf.setVisible(true);
