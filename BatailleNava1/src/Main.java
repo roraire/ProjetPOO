@@ -18,9 +18,15 @@ public class Main {
 		j1.poserBateau(j1.getBateau(3), 4, 1, "h");
 		j1.poserBateau(j1.getBateau(4), 7, 7, "v");
 		j1.getGrille().VueGrille();
+<<<<<<< HEAD
 	    
 	   
 	JoueurMachine m1=new JoueurMachine();
+=======
+	    JoueurVue jv  = new JoueurVue();
+	    jv.setVisible(true);
+	//JoueurMachine m1=new JoueurMachine();
+>>>>>>> 8ec7f0fc53bc23de62ecbe2b496f5b99f12dc988
 		
 	 
 	     
