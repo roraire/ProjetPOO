@@ -1,7 +1,11 @@
 package Model;
 
+import Vue.JeuPanel;
+import Vue.JoueurVue;
+
 public class Grille {
 
+	
 	private Case cases[][]= new Case[10][10];
 	
 	public Grille(){
@@ -11,6 +15,7 @@ public class Grille {
 				cases[i][j]=new Case();
 			}
 		}
+		
 	}
 	
 	public Case getCaseGrille(int i,int j){
@@ -23,6 +28,8 @@ public class Grille {
 	}
 	public void  VueGrille()
 	{
+		
+		JoueurVue joueurvue=new JoueurVue(this);
 		
 			System.out.println("  0   1   2   3   4   5   6   7   8   9\t\t\t\t\t");
 			System.out.println(" _____________________________________");
@@ -39,6 +46,8 @@ public class Grille {
 				System.out.println("|___|___|___|___|___|___|___|___|___|___|  "+i);
 			}
 			//System.out.println(" _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _");
+		
+			
 		}
 		
 		

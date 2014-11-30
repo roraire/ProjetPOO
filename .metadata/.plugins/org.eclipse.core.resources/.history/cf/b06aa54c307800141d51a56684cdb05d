@@ -1,0 +1,77 @@
+package Controller;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+
+public class Mouse extends MouseAdapter {
+
+	int x,y;
+	
+	public Mouse(){
+	}
+	
+	
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		super.mouseClicked(e);
+		int xCord =e.getX();
+		int yCord=e.getY();
+		this.verfierCase(xCord, yCord);
+		
+		
+	}
+
+	public void verfierCase(int xCord,int yCord){
+		
+		boolean cond=false;
+		
+		
+		if(xCord>19 && yCord>19){
+			System.out.println("x="+xCord);
+			System.out.println("y="+yCord);
+		
+			/*while(!cond){
+			
+		for(int i=0; i<10; i++){
+			for(int j=0; j<10; j++){
+			
+				if(xCord<20+i*30 && yCord< 20+j*30){
+					x=i;
+					y=j;
+					cond=true;
+					
+				}
+				
+				}
+				
+			}
+	}*/
+		}
+		}
+	
+	@Override
+	public void mouseEntered(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
