@@ -1,5 +1,10 @@
 package Controller;
 
+import java.awt.Color;
+import java.awt.Graphics;
+
+
+
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -18,26 +23,29 @@ public class Mouse extends MouseAdapter {
 		int xCord =e.getX();
 		int yCord=e.getY();
 		this.getCase(xCord, yCord);
+		Graphics g=e.getComponent().getGraphics();
+			g.setColor(Color.RED);
+			g.fillRect((20+y*30)+1,(40+x*30)+1 , 29, 29);
 		
 		
 	}
 
 	public void getCase(int xCord,int yCord){
 		
-		if(xCord>19 && xCord<321 && yCord>19 && yCord<321){
+		if(xCord>19 && xCord<321 && yCord>39 && yCord<341){
 			
 				
 					for(int i=0;i<=10;i++){
 					if(xCord<20+(i+1)*30 && xCord>20+i*30 )  {
-					x=i;
-					System.out.println("case i="+x);
+					y=i;
+					System.out.println("case i="+y);
 					}
 					}
 					
 					for(int j=0;j<=10;j++){
-					if(yCord<20+(j+1)*30 && yCord>20+j*30){
-					y=j;
-					System.out.println("case j="+y);
+					if(yCord<40+(j+1)*30 && yCord>40+j*30){
+					x=j;
+					System.out.println("case j="+x);
 					}
 					}
 					

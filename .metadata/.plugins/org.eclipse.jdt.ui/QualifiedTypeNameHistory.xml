@@ -2,11 +2,9 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="Model.JoueurHomme"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="Model.JoueurMachine"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
-<fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="java.awt.Font"/>
 <fullyQualifiedTypeName name="javax.swing.JPanel"/>
 <fullyQualifiedTypeName name="java.awt.Graphics"/>
@@ -14,6 +12,9 @@
 <fullyQualifiedTypeName name="Vue.JoueurVue"/>
 <fullyQualifiedTypeName name="Model.Grille"/>
 <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
-<fullyQualifiedTypeName name="Controller.Mouse"/>
 <fullyQualifiedTypeName name="java.awt.event.MouseAdapter"/>
+<fullyQualifiedTypeName name="Model.Joueur"/>
+<fullyQualifiedTypeName name="Model.JoueurMachine"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="Controller.Mouse"/>
 </qualifiedTypeNameHistroy>

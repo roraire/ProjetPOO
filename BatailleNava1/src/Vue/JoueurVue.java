@@ -22,7 +22,7 @@ public class JoueurVue extends JFrame {
 		super();
 		grille=g;
 		setTitle("Bataille Naval");
-		setSize(600, 650);
+		setSize(750, 550);
 		setResizable(false);
 		setVisible(true);
 		setLocation(300, 300);
@@ -34,21 +34,6 @@ public class JoueurVue extends JFrame {
 		contentPane.setLayout(new GridLayout(1, 1));
 		contentPane.add(new JeuPanel(grille));
 	}
-	
-	/*public class Mouse extends MouseAdapter {
 
-		@Override
-		public void mouseClicked(MouseEvent e) {
-			super.mouseClicked(e);
-			int xCoord =e.getX();
-			int yCoord=e.getY();
-			
-			System.out.println("x="+xCoord);
-			System.out.println("y="+yCoord);
-			
-		}
-		
-		
-	}*/
 
 }
