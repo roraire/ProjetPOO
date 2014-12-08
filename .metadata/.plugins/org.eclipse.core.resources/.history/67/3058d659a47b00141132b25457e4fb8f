@@ -19,13 +19,11 @@ import Model.JoueurMachine;
 public class JoueurVue extends JFrame {
 	
 	
-	
-	
-	//Grille grille =new Grille();
+	Grille grille =new Grille();
 	public JoueurVue(JoueurHomme  jh,JoueurMachine jm){
 		super();
 		
-		//grille=g;
+		grille=g;
 		setTitle("Bataille Naval");
 		setSize(750, 550);
 		setResizable(false);

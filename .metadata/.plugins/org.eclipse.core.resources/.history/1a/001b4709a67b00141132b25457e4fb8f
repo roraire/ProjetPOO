@@ -76,7 +76,7 @@ public class JeuPanel extends JPanel  {
 			for(int j=0; j<10; j++){
 			if(jm.getGrille().getCaseGrille(i, j).isOccupe())
 				
-					g.fillRect(20+j*30, 40+i*30, 30, 30);
+					g.fillRect(420+j*30, 40+i*30, 30, 30);
 			
 			}
 		}

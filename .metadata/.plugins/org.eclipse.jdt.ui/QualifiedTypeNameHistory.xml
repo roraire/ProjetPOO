@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="Model.JoueurHomme"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
@@ -14,7 +13,8 @@
 <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
 <fullyQualifiedTypeName name="java.awt.event.MouseAdapter"/>
 <fullyQualifiedTypeName name="Model.Joueur"/>
-<fullyQualifiedTypeName name="Model.JoueurMachine"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="Controller.Mouse"/>
+<fullyQualifiedTypeName name="Model.JoueurHomme"/>
+<fullyQualifiedTypeName name="Model.JoueurMachine"/>
 </qualifiedTypeNameHistroy>

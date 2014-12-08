@@ -13,19 +13,14 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import Model.Grille;
-import Model.JoueurHomme;
-import Model.JoueurMachine;
 
 public class JoueurVue extends JFrame {
 	
 	
-	
-	
-	//Grille grille =new Grille();
-	public JoueurVue(JoueurHomme  jh,JoueurMachine jm){
+	Grille grille =new Grille();
+	public JoueurVue(Grille g){
 		super();
-		
-		//grille=g;
+		grille=g;
 		setTitle("Bataille Naval");
 		setSize(750, 550);
 		setResizable(false);
@@ -37,7 +32,7 @@ public class JoueurVue extends JFrame {
 		
 		Container contentPane = getContentPane();
 		contentPane.setLayout(new GridLayout(1, 1));
-		contentPane.add(new JeuPanel(jh,jm));
+		contentPane.add(new JeuPanel(grille));
 	}
 
 

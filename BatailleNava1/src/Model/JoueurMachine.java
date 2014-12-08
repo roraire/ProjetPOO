@@ -19,7 +19,7 @@ public class JoueurMachine extends Joueur {
 			i++;
 		}
 		
-		this.getGrille().VueGrille();
+		//this.getGrille().VueGrille();
 	}
 
 	

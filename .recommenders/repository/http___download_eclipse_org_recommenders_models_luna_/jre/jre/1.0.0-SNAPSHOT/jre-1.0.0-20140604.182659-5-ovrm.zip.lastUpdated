@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Dec 04 11:53:56 CET 2014
+@default-models-http\://download.eclipse.org/recommenders/models/luna/.lastUpdated=1417690436490
+http\://download.eclipse.org/recommenders/models/luna/.error=Could not transfer artifact jre\:jre\:zip\:ovrm\:1.0.0-20140604.182659-5 from/to models (http\://download.eclipse.org/recommenders/models/luna/)\: Checksum validation failed, expected <\!DOCTYPE but is a45fba520821b95f31309f1136111079397244c1
