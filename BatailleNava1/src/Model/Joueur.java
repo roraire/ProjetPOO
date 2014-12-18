@@ -3,7 +3,7 @@ package Model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Joueur {// essai
+public abstract class Joueur {// essai
 
 	
 	protected Grille grille;
