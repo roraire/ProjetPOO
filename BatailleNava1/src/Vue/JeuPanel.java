@@ -60,6 +60,25 @@ public class JeuPanel extends JPanel  {
 				g.drawLine(420+i*30, 40, 420+i*30, 40+300);
 				}
 		
+		/*	g.setColor(Color.green);
+			for(int i=0; i<10; i++){
+				for(int j=0; j<10; j++){
+				if(jh.getGrille().getCaseGrille(i, j).isTouche())
+					
+						g.fillRect(420+j*30, 40+i*30, 30, 30);
+				
+				}
+			}
+			
+			for(int i=0; i<10; i++){
+				for(int j=0; j<10; j++){
+				if(jm.getGrille().getCaseGrille(i, j).isTouche())
+					
+						g.fillRect(420+j*30, 40+i*30, 30, 30);
+				
+				}
+			}
+			*/
 		
 		/*******************************************************************/
 			
@@ -72,6 +91,7 @@ public class JeuPanel extends JPanel  {
 			}
 		}
 		
+		
 		for(int i=0; i<10; i++){
 			for(int j=0; j<10; j++){
 			if(jm.getGrille().getCaseGrille(i, j).isOccupe())
@@ -80,6 +100,27 @@ public class JeuPanel extends JPanel  {
 			
 			}
 		}
+		
+		g.setColor(Color.green);
+		for(int i=0; i<10; i++){
+			for(int j=0; j<10; j++){
+			if(jh.getGrille().getCaseGrille(i, j).isTouche())
+				
+					g.fillRect(420+j*30, 40+i*30, 30, 30);
+			
+			}
+		}
+		
+		for(int i=0; i<10; i++){
+			for(int j=0; j<10; j++){
+			if(jm.getGrille().getCaseGrille(i, j).isTouche())
+				
+					g.fillRect(420+j*30, 40+i*30, 30, 30);
+			
+			}
+		}
+		
+		
 		
 		/*******************************************************************/
 		
