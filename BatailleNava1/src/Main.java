@@ -15,16 +15,25 @@ public class Main {
 		j1.poserBateau(j1.getBateau(0), 9, 0, "h");
 		j1.poserBateau(j1.getBateau(1), 0, 1, "h");
 		j1.poserBateau(j1.getBateau(2), 5, 1, "v");
-		j1.poserBateau(j1.getBateau(3), 4, 1, "h");
-		j1.poserBateau(j1.getBateau(4), 7, 7, "v");
+		j1.poserBateau(j1.getBateau(3), 8, 0, "h");
+		j1.poserBateau(j1.getBateau(4), 4, 1, "h");
 		//j1.getGrille().VueGrille();
+		
+		j1.getGrille().VueGrille();
+		j1.touche(0, 1); 
+		j1.touche(0, 2); 
+		j1.touche(0, 0);
+		j1.getGrille().VueGrille();
+
 
 	    
 	   
 		JoueurMachine jm=new JoueurMachine();
+		/*jm.touche(0, 0); 
+		jm.touche(1, 2); 
+		jm.touche(0, 9);
 		
-		
-		
+		*/
 
 	   JoueurVue jv  = new JoueurVue(j1,jm);
 	  //  jv.setVisible(true);

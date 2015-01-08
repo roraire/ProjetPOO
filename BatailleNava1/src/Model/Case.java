@@ -5,7 +5,18 @@ public class Case {
 	private boolean occupe;
 	private  Bateau bat;
 	
+
+	private boolean touche;
 	
+	
+	public boolean isTouche() {
+		return touche;
+	}
+
+	public void setTouche(boolean Touche) {
+		this.touche = Touche;
+	}
+
 	public Case(){
 		occupe=false;
 		

@@ -17,6 +17,12 @@ public abstract class Joueur {// essai
 		
 	}
 	
+public synchronized void touche(int i,int j){
+		
+		this.getGrille().getCaseGrille(i, j).setTouche(true);
+		notifyAll();
+}
+	
 	public Grille getGrille() {
 		return grille;
 	}

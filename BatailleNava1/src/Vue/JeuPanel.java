@@ -36,6 +36,42 @@ public class JeuPanel extends JPanel  {
 		// a définir apres 
 		
 	}
+	public void afficherGrilleJoueurHome(){
+		Graphics g=getGraphics();
+		g.setColor(Color.BLUE);
+		g.fillRect(20, 40, 300, 300);
+		g.setColor(Color.BLACK);
+		for(int i=0;i<=10;i++){
+			g.drawLine(20, 40+i*30, 320, 40+i*30);
+		}
+		for(int i=0;i<=10;i++){
+			g.drawLine(20+i*30, 40, 20+i*30, 40+300);
+		}
+
+		for(int i=0; i<10; i++){
+			for(int j=0; j<10; j++){
+				
+				if(jh.getGrille().getCaseGrille(i, j).isOccupe()){
+					g.fillRect(20+j*30, 40+i*30, 30, 30);
+					
+				}
+				
+				if(jh.getGrille().getCaseGrille(i, j).isTouche()){
+					if(jh.getGrille().getCaseGrille(i, j).isOccupe()){
+						g.setColor(Color.GREEN);
+						g.fillRect(20+j*30, 40+i*30, 30, 30);
+						g.setColor(Color.black);
+					}else{
+					g.setColor(Color.RED);
+					g.fillRect(20+j*30, 40+i*30, 30, 30);
+					g.setColor(Color.black);
+					}
+					}
+			}
+		}
+
+
+	}
 	
 	
 	
@@ -57,6 +93,8 @@ public class JeuPanel extends JPanel  {
 			}
 		
 	//Grillle2
+		
+		
 
 		
 		
@@ -66,7 +104,28 @@ public class JeuPanel extends JPanel  {
 			for(int i=0;i<=10;i++){
 				g.drawLine(420+i*30, 40, 420+i*30, 40+300);
 				}
-		/*******************************************************************/
+
+		/*	g.setColor(Color.green);
+			for(int i=0; i<10; i++){
+				for(int j=0; j<10; j++){
+				if(jh.getGrille().getCaseGrille(i, j).isTouche())
+					
+						g.fillRect(420+j*30, 40+i*30, 30, 30);
+				
+				}
+			}
+			
+			for(int i=0; i<10; i++){
+				for(int j=0; j<10; j++){
+				if(jm.getGrille().getCaseGrille(i, j).isTouche())
+					
+						g.fillRect(420+j*30, 40+i*30, 30, 30);
+				
+				}
+			}
+			*/
+		
+
 			
 		for(int i=0; i<10; i++){
 			for(int j=0; j<10; j++){
@@ -77,6 +136,7 @@ public class JeuPanel extends JPanel  {
 			}
 		}
 		
+		
 		for(int i=0; i<10; i++){
 			for(int j=0; j<10; j++){
 				if(jm.getGrille().getCaseGrille(i, j).isOccupe())
@@ -85,6 +145,27 @@ public class JeuPanel extends JPanel  {
 			
 			}
 		}
+		
+		g.setColor(Color.green);
+		for(int i=0; i<10; i++){
+			for(int j=0; j<10; j++){
+			if(jh.getGrille().getCaseGrille(i, j).isTouche())
+				
+					g.fillRect(420+j*30, 40+i*30, 30, 30);
+			
+			}
+		}
+		
+		for(int i=0; i<10; i++){
+			for(int j=0; j<10; j++){
+			if(jm.getGrille().getCaseGrille(i, j).isTouche())
+				
+					g.fillRect(420+j*30, 40+i*30, 30, 30);
+			
+			}
+		}
+		
+		
 		
 		/*******************************************************************/
 		
