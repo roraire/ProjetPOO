@@ -32,6 +32,11 @@ public class JeuPanel extends JPanel  {
 		repaint();
    	}
 	
+	public void clearAll(){
+		// a définir apres 
+		
+	}
+	
 	
 	
 	public void paintComponent(Graphics g) {
@@ -52,6 +57,8 @@ public class JeuPanel extends JPanel  {
 			}
 		
 	//Grillle2
+
+		
 		
 		for(int i=0;i<=10;i++){
 			g.drawLine(420, 40+i*30, 720, 40+i*30);
@@ -59,8 +66,6 @@ public class JeuPanel extends JPanel  {
 			for(int i=0;i<=10;i++){
 				g.drawLine(420+i*30, 40, 420+i*30, 40+300);
 				}
-		
-		
 		/*******************************************************************/
 			
 		for(int i=0; i<10; i++){
@@ -74,7 +79,7 @@ public class JeuPanel extends JPanel  {
 		
 		for(int i=0; i<10; i++){
 			for(int j=0; j<10; j++){
-			if(jm.getGrille().getCaseGrille(i, j).isOccupe())
+				if(jm.getGrille().getCaseGrille(i, j).isOccupe())
 				
 					g.fillRect(20+j*30, 40+i*30, 30, 30);
 			

@@ -1,7 +1,5 @@
 package Model;
 
-import Vue.JeuPanel;
-import Vue.JoueurVue;
 
 public class Grille {
 
